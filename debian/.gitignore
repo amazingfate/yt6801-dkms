@@ -1,0 +1,7 @@
+/.debhelper
+/debhelper-build-stamp
+/files
+/yt6801-*
+/*.debhelper.log
+/*.debhelper
+/*.substvars

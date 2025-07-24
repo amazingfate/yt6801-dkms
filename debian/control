@@ -1,0 +1,17 @@
+Source: yt6801-dkms
+Maintainer: Jianfeng Liu <liujianfeng1994@gmail.com>
+Section: misc
+Priority: optional
+Standards-Version: 4.6.0
+Build-Depends: debhelper (>=12~),
+               devscripts,
+               dh-exec,
+               dh-sequence-dkms,
+               lintian
+
+Package: yt6801-dkms
+Architecture: all
+Section: misc
+Priority: optional
+Depends: ${misc:Depends}
+Description: dkms sources for YT6801 Ethernet

@@ -1,0 +1,13 @@
+#!/usr/bin/make -f
+
+include /usr/share/dpkg/pkg-info.mk
+
+%:
+	dh $@
+
+override_dh_auto_build:
+	# Skip module build because we are packaging dkms
+
+override_dh_auto_install:
+	mkdir -p debian/yt6801-dkms/usr/src/yt6801-${DEB_VERSION_UPSTREAM}/
+	install src/* debian/yt6801-dkms/usr/src/yt6801-${DEB_VERSION_UPSTREAM}/
